@@ -1,0 +1,16 @@
+items=['mic', 'phone', 3231.1, 3132, 'justin', 'bag', 'clif', 134, 99.98]
+str_item=[]
+num_item=[]
+
+for i in items:
+    if isinstance(i, float) or isinstance(i, int):
+        num_item.append(i)
+    elif isinstance(i, str):
+        str_item.append(i)
+    else:
+        pass
+    
+str_item.sort()
+num_item.sort()
+print(str_item)
+print(num_item)
