@@ -1,0 +1,16 @@
+x=['nagy', 145, 'atef', 125.1, 'karengy', 145.256, 'call', 345]
+
+
+def fun(new_list):
+    num=[]
+    string=[]
+    for i in new_list:
+        if isinstance(i,int) or isinstance(i,float):
+            num.append(i)
+        elif isinstance (i,str):
+            string.append(i)
+        else:
+            pass
+    return num,string
+
+print(fun(x))
